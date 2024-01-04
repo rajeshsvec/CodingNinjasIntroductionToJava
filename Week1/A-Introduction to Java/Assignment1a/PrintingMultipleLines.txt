@@ -1,0 +1,9 @@
+public class SciencePoem {
+    public static void main(String[] args) {
+        //Write your code here
+	    //Pay attention to the new line and the ending characters.
+
+        System.out.println("In the realm of atoms and galaxies,\nWhere mysteries unfurl like cosmic seas,\nScience, our guiding star so bright,\nReveals the universe, its boundless light.\n");
+        System.out.println("From microcosms to celestial grace,\nInquiring minds explore every space,\nIn the quest for knowledge, we stand tall,\nScience, the greatest adventure of all.");
+    }
+}
