@@ -1,0 +1,22 @@
+public class DebugAndPrintLiterals {
+    public static void main(String[] args) {
+        //Write your code here
+
+        //Declare and initialize the variables with proper literal representation
+    int a=26;
+    float f=3.1415f;
+    double d=23.411;
+    String s="WritingCleanerCode";
+    System.out.println(a);
+    System.out.println(f);
+    System.out.println(d);
+    System.out.println(s);
+
+
+
+        //Print each literal value in new line. 
+
+
+        
+    }
+}

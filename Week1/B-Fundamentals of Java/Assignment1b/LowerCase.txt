@@ -1,0 +1,16 @@
+public class ConvertToLowerCase{
+    public static void main(String[] args) {
+        
+        String upperCaseString = "I AM LEARNING FUNDAMENTALS OF JAVA";
+
+        //Convert the above given string into all lowercase using wrapper class method of String
+        //Use inbuilt feature of String .toLowerCase()
+        String res=upperCaseString.toLowerCase();
+        System.out.println(res);
+
+
+        //Print the newly converted lower case string. 
+
+        
+    }
+}
