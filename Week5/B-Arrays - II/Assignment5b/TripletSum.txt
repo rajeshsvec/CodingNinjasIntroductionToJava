@@ -1,0 +1,37 @@
+
+public class Solution {
+     public static int pairSum(int arr[], int x,int ind) {
+    	//Your code goes here
+        int res=0;
+        int l=arr.length;
+        for(int i=ind;i<l-1;i++)
+        {
+            int a=arr[i];
+            int b=x-a;
+            for(int j=i+1;j<l;j++)
+            {
+                if(arr[j]==b)
+                {
+                    res+=1;
+                }
+            }
+        }
+        return res;
+    }
+    
+    public static int findTriplet(int[] arr, int x) 
+    {
+    	//Your code goes here
+        int count=0;
+        for(int i=0;i<arr.length-2;i++)
+        {
+            int pradeep=arr[i];
+            int bala=x-pradeep;
+            int temp=pairSum(arr, bala, i+1);
+            count+=temp;
+        }
+        return count;
+
+    }
+
+}

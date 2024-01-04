@@ -1,0 +1,17 @@
+public class Solution {
+    public static int[] reverseBetween(int n, int l, int r, int []arr) {
+        // Write your code from here.
+        for(int i=l;i<n;i++)
+        {
+            if(i<r)
+            {
+                arr[i]=arr[i]+arr[r];
+            arr[r]=arr[i]-arr[r];
+            arr[i]=arr[i]-arr[r];
+             r-=1;
+            }
+           
+        }
+        return arr;
+    }
+}

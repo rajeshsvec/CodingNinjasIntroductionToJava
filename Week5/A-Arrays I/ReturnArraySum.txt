@@ -1,0 +1,13 @@
+
+public class Solution {
+	
+	public static int sum(int[] arr) {
+		//Your code goes here
+		int s=0;
+	for(int i:arr)
+	{
+		s+=i;
+	}
+		return s;
+	}
+}

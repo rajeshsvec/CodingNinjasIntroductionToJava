@@ -1,0 +1,15 @@
+import java.util.* ;
+import java.io.*; 
+
+public class Solution {
+
+    static int largestElement(int[] arr, int n) {
+        // Write your code here.
+        int max=Integer.MIN_VALUE;
+        for(int i:arr)
+        {
+            max=Math.max(max,i);
+        }
+        return max;
+    }
+}

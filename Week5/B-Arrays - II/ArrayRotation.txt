@@ -1,0 +1,33 @@
+public class Solution {
+    public static void changeToLeft(int a[],int pos,int b[])
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            b[(i-pos+a.length)%a.length]=a[i];
+        }
+    }
+    public static void changeToRight(int a[],int pos,int b[])
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            b[(i+pos)%a.length]=a[i];
+        }
+    }
+    public static int[] rotateArray(int []a, int x, String dir) {
+        // Write your code here.
+        int l=a.length;
+        if(x>l)
+        {
+            x=x%l;
+        }
+        int b[]=new int[l];
+        if(dir.equals("LEFT"))
+        {
+            changeToLeft(a,x,b);
+        }
+        else{
+            changeToRight(a,x,b);
+        }
+        return b;
+    }
+}

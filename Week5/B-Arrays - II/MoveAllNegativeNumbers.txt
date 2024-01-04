@@ -1,0 +1,20 @@
+public class Solution
+ {
+    public static int[] separateNegativeAndPositive(int a[]) 
+    {
+        int z=0,nz=0;
+        int l=a.length;
+        while(z!=l)
+        {
+            if(a[z]<0)
+            {
+                int temp=a[z];
+                a[z]=a[nz];
+                a[nz]=temp;
+                nz+=1;
+            }
+            z+=1;
+        }
+        return a;
+    }
+}
