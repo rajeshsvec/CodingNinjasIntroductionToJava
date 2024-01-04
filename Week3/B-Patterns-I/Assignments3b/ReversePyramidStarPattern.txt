@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        // write the logic here !!
+        Scanner sc=new Scanner(System.in);
+        byte b=sc.nextByte();
+        for(byte i=1;i<=b;i++)
+        {
+            for(byte j=1;j<=i-1;j++)
+            {
+                System.out.print(' ');
+            }
+            for(byte j=b;j>=i;j--)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        }
+    }

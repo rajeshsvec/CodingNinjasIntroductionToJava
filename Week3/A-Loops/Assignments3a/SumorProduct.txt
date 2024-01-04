@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+	public static void sum(int n)
+	{
+		System.out.println((n * (n+1))/2);
+		return;
+	}
+	public static void prod(int n)
+	{
+		int p=1;
+		for(int i=1;i<=n;i++)
+		{
+			p*=i;
+		}
+		System.out.println(p);
+		return;
+	}
+	
+	public static void main(String[] args) 
+	{
+		// Write your code here
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		int c=sc.nextInt();
+		switch(c)
+		{
+			case 1: sum(n);break;
+			case 2: prod(n);break;
+			default:System.out.println("-1"); break;
+		}
+	}
+}
