@@ -1,0 +1,20 @@
+
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+       // write your code logic ...
+    Scanner sc = new Scanner(System.in);
+    byte age = sc.nextByte();
+    double income = sc.nextDouble();
+    boolean b=sc.nextBoolean();
+    if(!b && age>=18 && income>=20000)
+    {
+        System.out.println("You are eligible for the loan.");
+    }
+    else{
+        System.out.println("You are not eligible for the loan.");
+    }
+
+       
+    }
+}

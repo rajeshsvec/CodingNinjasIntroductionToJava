@@ -1,0 +1,12 @@
+import java.util.*;
+
+
+public class Solution
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		 int n=sc.nextInt();
+		 String res=n%5==0 ? "Multiple of 5":"Not a Multiple of 5";
+		 System.out.println(res);
+	}
+}

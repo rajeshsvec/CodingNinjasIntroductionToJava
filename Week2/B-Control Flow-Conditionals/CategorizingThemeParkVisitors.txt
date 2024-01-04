@@ -1,0 +1,26 @@
+
+
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        // write your code logic here !! 
+        Scanner sc = new Scanner(System.in);
+        byte age=sc.nextByte();
+        if(age>=65)
+        {
+            System.out.println("Seniors");
+        }
+        else if(age>=13)
+        {
+            System.out.println("Adults");
+        }
+        else if(age>=5)
+        {
+            System.out.println("Children");
+        }
+        else{
+            System.out.println("Infants");
+        }
+        
+    }
+}

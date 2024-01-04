@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Solution{
+    public static void main(String[] args) {
+        //Write your code here. 
+        Scanner sc = new Scanner(System.in);
+        int bs=sc.nextInt();
+        double ts = bs + 0.2*bs + 0.5*bs-0.11* bs;
+        char gr=sc.next().charAt(0);
+        int all=0;
+        if(gr=='A')
+        {
+            all=1700;
+        }
+        else if(gr=='B')
+        {
+            all=1500;
+        }
+        else {
+            all=1300;
+        }
+        ts=ts+all;
+        System.out.println(Math.round(ts));
+    }
+}

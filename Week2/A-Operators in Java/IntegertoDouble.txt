@@ -1,0 +1,9 @@
+public class Solution {
+    public static void main(String[] args) {
+      int my_Int = 9;
+      // write your code logic here !!
+    double res=(double)my_Int;
+    System.out.println(my_Int);
+    System.out.println(res);
+    }
+  }

@@ -1,0 +1,14 @@
+public class Solution {
+    public static void main(String[] args) {
+        int a = 12; // value for 'a'
+        int b = 7;  // value for 'b'
+
+
+        // Bitwise left shift for 'a'
+        System.out.println(a<<1);
+        System.out.println(b>>1);
+
+        // Bitwise right shift for 'b'
+        
+    }
+}

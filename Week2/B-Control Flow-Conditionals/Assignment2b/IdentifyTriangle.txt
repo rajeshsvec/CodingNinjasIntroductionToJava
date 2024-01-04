@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Solution
+{
+	public static void main(String[] args) 
+    {
+		// write your code logic here !! 
+		Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+	int b=sc.nextInt();
+	int c= sc.nextInt();
+	String res="";
+	if(a+b <=c ||  a+c<=b || b+c<=a)
+	{
+		res+="Not a Triangle";
+	}
+	else if(a==b && a==c)
+	{
+		res+="Equilateral Triangle";
+	}
+	else if(a==b || a==c || b==c)
+	{
+		res+="Isosceles Triangle";
+	}
+	else{
+		res+="Scalene Triangle";
+	}
+	System.out.println(res);
+
+
+        
+	}
+}

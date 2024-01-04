@@ -1,0 +1,11 @@
+public class Solution {
+    public static void main(String[] args) {
+        double doubleValue = 9.85; // Initial double value
+
+        // Type casting from double to int
+       int result = (int) doubleValue;
+       System.out.println(result);
+        // Print the result
+       
+    }
+}
