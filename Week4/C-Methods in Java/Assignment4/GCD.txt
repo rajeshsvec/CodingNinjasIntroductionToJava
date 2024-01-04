@@ -1,0 +1,11 @@
+public class Solution {
+    public static int findGCD(int a, int b) {
+        // write the logic 
+        if(b==0)
+        {
+            return a;
+        }
+       int res= findGCD(b,a% b);
+        return res;
+    }
+}

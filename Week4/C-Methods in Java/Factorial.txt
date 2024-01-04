@@ -1,0 +1,13 @@
+
+public class Solution {
+	
+	public static void fact(int n) {
+		// Write your code here
+		int factorial=1;
+		for(int i=1;i<=n;i++)
+		{
+				factorial*=i;
+		}
+	   System.out.println(factorial);
+	}		
+}

@@ -1,0 +1,5 @@
+public class Solution {	
+public static int calculateSimple(int principal, double rate, int time) {
+       return (int)((principal * rate * time) /100);
+    }
+}

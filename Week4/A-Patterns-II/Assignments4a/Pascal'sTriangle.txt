@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Solution {
+    public static void Print1(int n)
+    {
+        for(int i=1;i<=n;i++)
+        {
+            System.out.print(' ');
+        }
+    }
+    public static void Print2(int n)
+    {
+        int res=(int)(Math.pow(11,(n-1)));
+        while(res>0)
+        {
+            System.out.print(res%10+" ");
+            res/=10;
+        }
+    }
+    public static void main(String[] args) {
+       // write your code logic !!
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            Print1(n-i);
+            Print2(i);
+            System.out.println();
+        }
+    }
+}

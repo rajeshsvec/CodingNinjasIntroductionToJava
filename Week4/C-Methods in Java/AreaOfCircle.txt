@@ -1,0 +1,9 @@
+public class Solution {	
+public static double calculateCircleArea(double radius)
+{
+       // write your logic here !!
+       
+        double area=radius*radius*3.14159;
+        return area;
+    }
+}

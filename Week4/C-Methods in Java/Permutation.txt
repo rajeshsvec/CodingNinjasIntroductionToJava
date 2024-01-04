@@ -1,0 +1,25 @@
+public class Solution{
+    public static int fact(int n)
+    {
+        int factorial=1;
+        for(int i=1;i<=n;i++)
+        {
+            factorial*=i;
+        }
+        return factorial;
+    }
+    public static int permutation(int n, int r) {
+        // write your logic here !!
+        if(n<0 || r<0 || n<r)
+        {
+            return -1;
+        }
+        int npr=fact(n)/fact(n-r);
+        return npr;
+        
+    }
+}
+
+
+
+
