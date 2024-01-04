@@ -1,0 +1,8 @@
+public class SampleProgram {
+    public static void main(String[] args){
+	//Write your code below
+   
+   System.out.print("I'm learning Java.\nJava is an object-oriented programming language.");
+
+    }
+}
