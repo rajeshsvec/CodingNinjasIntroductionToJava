@@ -1,0 +1,53 @@
+import java.io.*;
+import java.util.* ;
+
+public class Solution {
+    public static void putZeroes(int r,int c,int [][]temp)
+    {
+        int n=temp.length;
+        int m=temp[0].length;
+        for(int i=0;i<m;i++)
+        {
+            temp[r][i]=0;
+        }
+        for(int i=0;i<n;i++)
+        {
+            temp[i][c]=0;
+        }
+        return;
+    }
+    public static void setZeros(int matrix[][]) {
+        // Write your code here..
+        int n=matrix.length;
+        int m=matrix[0].length;
+        int temp[][]=new int[n][m];
+        for(int i=0;i<n;i++)
+        {
+            // for(int j=0;j<m;j++)
+            // {
+            //     temp[i][j]=matrix[i][j];
+            // }
+            System.arraycopy(matrix[i],0,temp[i],0,m);
+        }
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                if(matrix[i][j]==0)
+                {
+                    putZeroes(i,j,temp);
+                }
+            }
+        }
+        for(int i=0;i<n;i++)
+        {
+            // for(int j=0;j<m;j++)
+            // {
+            //     matrix[i][j]=temp[i][j];
+            // }
+            System.arraycopy(temp[i],0,matrix[i],0,m);
+        }
+        return ;
+    }
+
+}

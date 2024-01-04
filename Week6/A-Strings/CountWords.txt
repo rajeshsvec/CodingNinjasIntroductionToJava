@@ -1,0 +1,12 @@
+
+public class Solution {
+
+	public static int countWords(String str)
+	 {	
+		//Your code goes here
+		String s[]=str.split(" ");
+		int len=s.length;
+		return len;
+	}
+
+}

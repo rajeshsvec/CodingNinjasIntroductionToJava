@@ -1,0 +1,55 @@
+
+public class Solution {
+
+	public static void findLargest(int mat[][]){
+		//Your code goes here
+       int res1=-1,res2=-1,max1=Integer.MIN_VALUE;
+       int n=mat.length;
+      
+       if(n==0)
+       {
+           System.out.println("row 0 "+max1);
+		   return;
+       }
+	   int max2=max1;
+	    int m=mat[0].length;
+		String s1="",s2="";int rsum=0,csum=0;
+		for(int i=0;i<n;i++)
+		{
+			 rsum=0;
+			for(int j=0;j<m;j++)
+			{
+				rsum+=mat[i][j];
+			}
+			if( rsum>max1)
+			{
+				max1=rsum;
+				res1=i;
+				s1="row";
+			}
+		}
+		for(int i=0;i<m;i++)
+		{
+			 csum=0;
+			for(int j=0;j<n;j++)
+			{
+				csum+=mat[j][i];
+			}
+			if(csum>max2)
+			{
+				max2=csum;
+				res2=i;
+				s2="column";
+			}
+		}
+		if(max1>=max2)
+		{
+			System.out.print(s1+" "+res1+" "+max1);
+		}
+		else{
+		System.out.print(s2+" "+res2+" "+max2);
+		}
+		System.out.println();
+		return;
+	}
+}

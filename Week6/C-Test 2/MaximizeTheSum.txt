@@ -1,0 +1,82 @@
+import java.util.Stack;
+public class Solution {
+
+	public static int sumOfSub(int arr[],int left,int right)
+	{
+		int sum=0;
+		for(int i=left;i<=right;i++)
+		{
+			sum+=arr[i];
+		}
+		return sum;
+	}
+	public static int indexFind(int arr[],int ele,int ind)
+	{
+		if(ind <arr.length)
+		{
+		for(int i=ind;i<arr.length;i++)
+		{
+			if(arr[i]==ele)
+			{
+				return i;
+			}
+		}
+		}
+		return -1;
+	}
+
+	public static int commonElement(int arr1[],int first,int arr2[],int second)
+	{
+		int result=0;
+		Stack <Integer> s=new Stack<>();
+		int i=first;
+		int l1=arr1.length;
+		int l2=arr2.length;
+		while(i<l1 && second<l2)
+		{
+			int temp=arr1[i];
+			int res=indexFind(arr2,temp,second);
+			if(res!=-1)
+			{
+				s.push(arr1[i]);
+				int m1=sumOfSub(arr1, first, i);
+				int m2=sumOfSub(arr2, second, res);
+				result+=Math.max(m1,m2);
+				first=i+1;
+				second=res+1;
+			}
+			i+=1;
+		}
+		int a1=0,a2=0;
+		while(i<l1)
+		{
+			a1+=arr1[i];
+			i+=1;
+		}
+		while(second<l2)
+		{
+			a2+=arr2[second];
+			second+=1;
+		}
+		return result+Math.max(a1,a2);
+	
+
+	}
+
+	public static long maximumSumPath(int[] input1, int[] input2) {
+		/* Your class should be named Solution
+		* Don't write main().
+		* Don't read input, they are passed as function arguments.
+		* Return output and don't print it.
+		* Taking input and printing output is handled automatically.
+		*/
+		if(input1.length==1 && input2.length==1)
+		{
+		
+			return Math.max(input1[0],input2[0]);
+		}
+		int res=commonElement(input1, 0, input2, 0);
+		
+		return res;
+	}
+}
